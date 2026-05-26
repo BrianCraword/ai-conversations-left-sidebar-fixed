@@ -1,0 +1,31 @@
+# ============================================================================
+# AI Conversations Left Sidebar — settings
+# Site-wide policy for filter / delete / edit on the conversations sidebar.
+# Per-user state is not stored here (this component keeps no per-user prefs).
+# ============================================================================
+
+ai_conv_left_sidebar_enabled:
+  type: bool
+  default: true
+  client: true
+  description: "Master switch for the left-sidebar enhancements (filter, delete, edit, left chevron). When off, the component injects nothing."
+
+ai_conv_filter_enabled:
+  type: bool
+  default: true
+  client: true
+  description: "Show the live filter box at the top of the conversations sidebar."
+
+ai_conv_delete_allowed_groups:
+  type: list
+  list_type: compact
+  default: "staff"
+  client: true
+  description: "Group names whose members see the per-row delete button (comma-separated; e.g. staff,trust_level_1). Deleting a conversation deletes the underlying topic, so keep this restricted. Note: theme components do not support the group_list picker — enter group NAMES as text."
+
+ai_conv_edit_allowed_groups:
+  type: list
+  list_type: compact
+  default: "staff"
+  client: true
+  description: "Group names whose members see the per-row rename (edit) button (comma-separated; e.g. staff,trust_level_1). Enter group NAMES as text — theme components do not support the group_list picker."
