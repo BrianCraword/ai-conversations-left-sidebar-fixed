@@ -1,0 +1,16 @@
+en:
+  theme_metadata:
+    description: "Behavior for the AI Conversations LEFT sidebar — live filter, delete, rename, and the single left chevron. Owns no right-sidebar or styling concerns."
+  ai_conv_left_sidebar:
+    filter_placeholder: "Filter conversations…"
+    delete_label: "Delete conversation"
+    delete_confirm: "Delete this conversation? This cannot be undone."
+    delete_failed: "Failed to delete conversation. You may not have permission."
+    edit_label: "Rename conversation"
+    edit_prompt: "Rename conversation:"
+    edit_save_label: "Save new title"
+    edit_cancel_label: "Cancel rename"
+    edit_failed: "Failed to rename conversation. You may not have permission."
+    edit_empty: "Title cannot be empty."
+    left_toggle_label: "Toggle conversation history"
+    left_toggle_title: "Toggle conversations"
